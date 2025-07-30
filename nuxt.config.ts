@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "dayjs-nuxt",
     "@nuxtjs/google-fonts",
+    "@nuxt/content",
   ],
   vite: {
     plugins: [tailwindcss()],
