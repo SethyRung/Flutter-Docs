@@ -31,4 +31,12 @@ export default defineNuxtConfig({
       Battambang: [100, 300, 400, 700, 900],
     },
   },
+  icon: {
+    customCollections: [
+      {
+        prefix: "icons",
+        dir: "./app/assets/icons",
+      },
+    ],
+  },
 });
