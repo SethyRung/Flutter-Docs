@@ -9,6 +9,18 @@
 
   --breakpoint-tablet: 440px;
   --breakpoint-computer: 1024px;
+
+  --color-primary-50: #ecfbff;
+  --color-primary-100: #d5f3ff;
+  --color-primary-200: #b4ecff;
+  --color-primary-300: #80e2ff;
+  --color-primary-400: #44cfff;
+  --color-primary-500: #19b1ff;
+  --color-primary-600: #0193ff;
+  --color-primary-700: #007afa;
+  --color-primary-800: #0468d7;
+  --color-primary-900: #0a549e;
+  --color-primary-950: #0c335f;
 }
 
 /* Base scrollbar styles */
