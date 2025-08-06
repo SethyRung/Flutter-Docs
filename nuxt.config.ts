@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "dayjs-nuxt",
     "@nuxtjs/google-fonts",
+    "@nuxt/content",
   ],
   vite: {
     plugins: [tailwindcss()],
@@ -29,5 +30,13 @@ export default defineNuxtConfig({
       "Kantumruy Pro": [100, 200, 300, 400, 500, 600, 700],
       Battambang: [100, 300, 400, 700, 900],
     },
+  },
+  icon: {
+    customCollections: [
+      {
+        prefix: "icons",
+        dir: "./app/assets/icons",
+      },
+    ],
   },
 });
