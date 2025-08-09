@@ -29,6 +29,7 @@
     "zod": "^4.0.10"
   },
   "devDependencies": {
+    "@iconify-json/simple-icons": "^1.2.46",
     "prettier": "^3.6.2"
   },
   "overrides": {

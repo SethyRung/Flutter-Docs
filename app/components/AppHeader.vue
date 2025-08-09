@@ -148,6 +148,17 @@ const items = ref<NavigationMenuItem[]>([
     ],
   },
 ]);
+
+const colorMode = useColorMode();
+
+const isDark = computed({
+  get() {
+    return colorMode.value === "dark";
+  },
+  set(_isDark) {
+    colorMode.preference = _isDark ? "dark" : "light";
+  },
+});
 </script>
 
 <template>
@@ -160,7 +171,7 @@ const items = ref<NavigationMenuItem[]>([
       <div class="flex-1">
         <UButton
           :avatar="{
-            src: 'images/flutter.svg',
+            src: isDark ? 'images/flutter-white.svg' : 'images/flutter.svg',
           }"
           variant="ghost"
           :ui="{
@@ -184,7 +195,12 @@ const items = ref<NavigationMenuItem[]>([
 
       <div class="flex items-center justify-end lg:flex-1 gap-1.5">
         <UButton icon="i-lucide-search" variant="ghost" color="neutral" />
-        <UButton icon="i-lucide-sun" variant="ghost" color="neutral" />
+        <UButton
+          :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'"
+          color="neutral"
+          variant="ghost"
+          @click="isDark = !isDark"
+        />
         <UButton
           icon="i-simple-icons-github"
           variant="ghost"
