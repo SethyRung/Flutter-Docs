@@ -169,17 +169,19 @@ const isDark = computed({
       class="max-w-[1440px] h-full px-4 md:px-6 xl:px-8 mx-auto flex items-center justify-between"
     >
       <div class="flex-1">
-        <UButton
-          :avatar="{
-            src: isDark ? 'images/flutter-white.svg' : 'images/flutter.svg',
-          }"
-          variant="ghost"
-          :ui="{
-            base: 'hover:bg-transparent',
-            leadingAvatar: 'w-full h-6 rounded-none bg-transparent',
-          }"
-          to="/"
-        />
+        <ClientOnly>
+          <UButton
+            :avatar="{
+              src: isDark ? '/images/flutter-white.svg' : '/images/flutter.svg',
+            }"
+            variant="ghost"
+            :ui="{
+              base: 'hover:bg-transparent',
+              leadingAvatar: 'w-full h-6 rounded-none bg-transparent',
+            }"
+            to="/"
+          />
+        </ClientOnly>
       </div>
       <div class="hidden lg:flex">
         <UNavigationMenu
