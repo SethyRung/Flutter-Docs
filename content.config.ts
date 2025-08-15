@@ -1,10 +1,16 @@
 import { defineCollection, defineContentConfig } from "@nuxt/content";
 
+const docsSource = {
+  include: "docs/**/*",
+  exclude: ["docs/**/*.json"],
+  prefix: "/docs",
+};
+
 export default defineContentConfig({
   collections: {
     docs: defineCollection({
-      source: "**/*.md",
       type: "page",
+      source: docsSource,
     }),
   },
 });
