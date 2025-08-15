@@ -1,20 +1,5 @@
 <script lang="ts" setup>
-const socialLinks = [
-  { icon: "i-simple-icons-x", url: "https://x.com/FlutterDev" },
-  { icon: "i-simple-icons-discord", url: "https://discord.com/invite/N7Yshp4" },
-  {
-    icon: "i-simple-icons-reddit",
-    url: "https://www.reddit.com/r/FlutterDev/",
-  },
-  {
-    icon: "i-simple-icons-stackoverflow",
-    url: "https://stackoverflow.com/tags/flutter",
-  },
-  {
-    icon: "i-simple-icons-github",
-    url: "https://github.com/SethyRung/Flutter-Docs",
-  },
-];
+const { footerLinks } = useNavigation();
 </script>
 
 <template>
@@ -26,12 +11,12 @@ const socialLinks = [
         class="lg:flex-1 flex items-center justify-center lg:justify-end gap-x-1.5 lg:order-3"
       >
         <UButton
-          v-for="{ icon, url } in socialLinks"
-          :key="url"
+          v-for="{ icon, to } in footerLinks"
+          :key="to"
           :icon="icon"
           variant="ghost"
           color="neutral"
-          :to="url"
+          :to="to"
           target="_blank"
         />
       </div>

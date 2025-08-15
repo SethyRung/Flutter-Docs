@@ -134,7 +134,11 @@ const featureItems = ref<TabsItem[]>([
           to="https://flutter.dev/development"
         />
       </div>
-      <img src="/images/developer-experience.jpg" alt="" class="max-w-md" />
+      <img
+        src="/images/developer-experience.jpg"
+        alt=""
+        class="max-w-md rounded-lg"
+      />
     </div>
     <div class="flex flex-col lg:grid gap-8 sm:gap-16">
       <div class="space-y-6">
