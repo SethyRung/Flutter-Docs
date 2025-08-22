@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="font-public-sans text-muted">
     <AppHeader />
     <slot></slot>
+    <AppFooter />
   </div>
 </template>
 

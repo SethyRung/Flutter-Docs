@@ -2,7 +2,7 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-red-hat-display: "Red Hat Display", "sans-serif";
+  --font-public-sans: "Public Sans", "sans-serif";
   --font-inter: "Inter", "sans-serif";
   --font-kantumruy-pro: "Kantumruy Pro", "sans-serif";
   --font-battambang: "Battambang", "sans-serif";
