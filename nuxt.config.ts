@@ -9,17 +9,14 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   modules: [
     "@nuxt/ui",
-    "@nuxt/eslint",
-    "@pinia/nuxt",
-    "@vueuse/nuxt",
-    "dayjs-nuxt",
     "@nuxt/content",
+    "@vueuse/nuxt",
+    "@pinia/nuxt",
+    "@nuxt/eslint",
+    "dayjs-nuxt",
   ],
   vite: {
     plugins: [tailwindcss()],
-  },
-  colorMode: {
-    preference: "light",
   },
   icon: {
     customCollections: [
