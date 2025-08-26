@@ -12,14 +12,10 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@pinia/nuxt",
     "@vueuse/nuxt",
-    "dayjs-nuxt",
     "@nuxt/content",
   ],
   vite: {
     plugins: [tailwindcss()],
-  },
-  colorMode: {
-    preference: "light",
   },
   icon: {
     customCollections: [
@@ -28,5 +24,8 @@ export default defineNuxtConfig({
         dir: "./app/assets/icons",
       },
     ],
+  },
+  ui: {
+    content: true,
   },
 });

@@ -19,7 +19,6 @@
     "@vueuse/core": "^13.6.0",
     "@vueuse/nuxt": "^13.6.0",
     "better-sqlite3": "^12.2.0",
-    "dayjs-nuxt": "^2.1.11",
     "nuxt": "^4.0.1",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.11",
