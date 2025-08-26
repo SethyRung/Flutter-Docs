@@ -72,15 +72,13 @@ cd Flutter-Docs
 ### 2. Install Dependencies
 
 ```bash
-npm install
-# or
-yarn install
+pnpm install
 ```
 
 ### 3. Start the Development Server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 The site will be available at `http://localhost:3000`
@@ -92,7 +90,7 @@ The site will be available at `http://localhost:3000`
 To generate a static version of the site:
 
 ```bash
-npm run generate
+pnpm generate
 ```
 
 Then you can deploy it via:
