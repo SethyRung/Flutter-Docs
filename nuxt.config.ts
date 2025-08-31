@@ -9,10 +9,10 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   modules: [
     "@nuxt/ui",
-    "@nuxt/eslint",
-    "@pinia/nuxt",
-    "@vueuse/nuxt",
     "@nuxt/content",
+    "@vueuse/nuxt",
+    "@pinia/nuxt",
+    "@nuxt/eslint",
   ],
   vite: {
     plugins: [tailwindcss()],

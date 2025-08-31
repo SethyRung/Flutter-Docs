@@ -10,10 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.58",
     "@nuxt/content": "^3.6.3",
     "@nuxt/eslint": "^1.7.1",
-    "@nuxt/ui": "^3.3.0",
+    "@nuxt/ui": "^4.0.0-alpha.0",
     "@pinia/nuxt": "^0.11.2",
     "@tailwindcss/vite": "^4.1.11",
     "@vueuse/core": "^13.6.0",
@@ -28,6 +27,7 @@
     "zod": "^4.0.10"
   },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.58",
     "@iconify-json/simple-icons": "^1.2.46",
     "prettier": "^3.6.2"
   },
