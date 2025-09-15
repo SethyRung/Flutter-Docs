@@ -1,13 +1,22 @@
-<script lang="ts" setup></script>
+<script setup lang="ts">
+import type { ContentNavigationItem } from "@nuxt/content";
+
+const route = useRoute();
+
+const navigation = inject<Ref<ContentNavigationItem[]>>("navigation");
+
+const { groupedNavigation } = useGroupNavigation(navigation!);
+</script>
 
 <template>
   <UMain>
     <UContainer>
-      <UPage>
+      <UPage class="lg:gap-0">
         <template #left>
           <UPageAside>
             <UContentNavigation
-              variant="link"
+              :key="route.path"
+              :navigation="groupedNavigation"
               highlight
               :ui="{ linkTrailingBadge: 'font-semibold uppercase' }"
             />
