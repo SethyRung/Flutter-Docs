@@ -14,6 +14,7 @@ function _useHeaderLinks() {
             label: "Set up Flutter",
             description: "Choose your development platform to get started",
             icon: "i-lucide-house",
+            to: "/docs/get-started/setup",
           },
           {
             label: "Installation",
@@ -25,12 +26,14 @@ function _useHeaderLinks() {
             label: "Learn Flutter",
             description: "For new Flutter developers",
             icon: "i-lucide-graduation-cap",
+            to: "/docs/get-started/learn",
           },
           {
             label: "Release notes",
             description:
               "Announcements and release notes for releases to the stable channel",
             icon: "i-lucide-notebook-pen",
+            to: "/docs/get-started/release",
           },
         ],
       },
