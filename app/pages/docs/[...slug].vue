@@ -21,6 +21,6 @@ if (!docs.value)
   <ContentRenderer
     v-if="docs"
     :value="docs"
-    class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 py-20"
+    class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 py-8"
   />
 </template>
