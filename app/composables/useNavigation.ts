@@ -11,9 +11,16 @@ function _useHeaderLinks() {
         active: route.path.startsWith("/docs/get-started"),
         children: [
           {
+            label: "Overview",
+            description:
+              "Ready to build beautiful, multiplatform apps from a single codebase?",
+            icon: "i-lucide-house",
+            to: "/docs/get-started/overview",
+          },
+          {
             label: "Set up Flutter",
             description: "Choose your development platform to get started",
-            icon: "i-lucide-house",
+            icon: "i-lucide-pencil-ruler",
             to: "/docs/get-started/setup",
           },
           {

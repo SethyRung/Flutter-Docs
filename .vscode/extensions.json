@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "nuxt.mdc",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
