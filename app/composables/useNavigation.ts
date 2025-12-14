@@ -124,7 +124,6 @@ function _useHeaderLinks() {
       },
       {
         label: "Beyond UI",
-        description: "",
         icon: "i-lucide-file-stack",
         to: "/docs/beyound-ui",
         children: [
@@ -180,19 +179,16 @@ function _useHeaderLinks() {
       },
       {
         label: "Tools & editors",
-        description: "",
         icon: "i-lucide-pocket-knife",
         to: "/docs/tools-editors",
       },
       {
         label: "Flutter concepts",
-        description: "",
         icon: "i-lucide-lightbulb",
         to: "/docs/flutter-concepts",
       },
       {
         label: "Resources",
-        description: "",
         icon: "i-lucide-server",
         to: "/docs/resources",
       },
