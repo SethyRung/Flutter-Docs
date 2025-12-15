@@ -56,67 +56,74 @@ function _useHeaderLinks() {
         children: [
           {
             label: "Introduction",
-            description: "",
+            description:
+              "Introduction to user interface development in Flutter.",
             icon: "i-lucide-palette",
             to: "/docs/user-interface/",
           },
           {
             label: "Widget catalog",
-            description: "",
+            description: "A catalog of some of Flutter's rich set of widgets.",
             icon: "i-lucide-grid-2x2",
             to: "/docs/user-interface/widget-catalog",
           },
           {
             label: "Layout",
-            description: "",
+            description:
+              "Learn how Flutter's layout mechanism works and how to build your app's layout.",
             icon: "i-lucide-grid-3x2",
             to: "/docs/user-interface/layout",
           },
           {
             label: "Adaptive & responsive design",
-            description: "",
+            description:
+              "It's important to create an app, whether for mobile or web, that responds to size and orientation changes and maximizes the use of each platform.",
             icon: "i-lucide-monitor-smartphone",
             to: "/docs/user-interface/adaptive-responsive-design",
           },
           {
             label: "Design & theming",
-            description: "",
+            description:
+              "How to share colors and font styles throughout an app using Themes.",
             icon: "i-lucide-palette",
             to: "/docs/user-interface/design-theming",
           },
           {
             label: "Interactivity",
-            description: "",
+            description:
+              "How to implement a stateful widget that responds to taps.",
             icon: "i-lucide-mouse-pointer-click",
             to: "/docs/user-interface/interactivity",
           },
           {
             label: "Assets & media",
-            description: "",
+            description:
+              "How to use images (and other assets) in your Flutter app.",
             icon: "i-lucide-images",
             to: "/docs/user-interface/assets-media",
           },
           {
             label: "Navigation & routing",
-            description: "",
+            description:
+              "Overview of Flutter's navigation and routing features",
             icon: "i-lucide-split",
             to: "/docs/user-interface/navigation-routing",
           },
           {
             label: "Animations & transitions",
-            description: "",
+            description: "How to perform animations in Flutter.",
             icon: "i-lucide-bring-to-front",
             to: "/docs/user-interface/animations-transitions",
           },
           {
             label: "Accessibility",
-            description: "",
+            description: "Information on Flutter's accessibility support.",
             icon: "i-lucide-person-standing",
             to: "/docs/user-interface/accessibility",
           },
           {
             label: "Internationalization",
-            description: "",
+            description: "How to internationalize your Flutter app.",
             icon: "i-lucide-languages",
             to: "/docs/user-interface/internationalization",
           },
