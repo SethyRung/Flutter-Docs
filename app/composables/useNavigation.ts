@@ -136,49 +136,57 @@ function _useHeaderLinks() {
         children: [
           {
             label: "Data & backend",
-            description: "",
+            description:
+              "Manage local storage, databases, and RESTful API integrations.",
             icon: "i-lucide-list",
             to: "/docs/beyound-ui/data-backend",
           },
           {
             label: "App architecture",
-            description: "",
+            description:
+              "Explore patterns for scalable state management and code organization.",
             icon: "i-lucide-git-fork",
             to: "/docs/beyound-ui/app-architecture",
           },
           {
             label: "Platform integration",
-            description: "",
+            description:
+              "Access native device features using MethodChannels and FFI.",
             icon: "i-lucide-square-terminal",
             to: "/docs/beyound-ui/platform-integration",
           },
           {
             label: "Packages & plugins",
-            description: "",
+            description:
+              "Extend your app's capabilities with the vast Pub.dev ecosystem.",
             icon: "i-lucide-package",
             to: "/docs/beyound-ui/packages-plugins",
           },
           {
             label: "Testing & debugging",
-            description: "",
+            description:
+              "Tools and strategies for unit, widget, and integration testing.",
             icon: "i-lucide-bug",
-            to: "/docs/beyound-ui/",
+            to: "/docs/beyound-ui/testing-debugging", // Updated for consistency
           },
           {
             label: "Performance & optimization",
-            description: "",
+            description:
+              "Analyze and improve app startup time, jank, and resource usage.",
             icon: "i-lucide-circle-gauge",
             to: "/docs/beyound-ui/performance-optimization",
           },
           {
             label: "Deployment",
-            description: "",
+            description:
+              "Build, sign, and release your application to various app stores.",
             icon: "i-lucide-rocket",
             to: "/docs/beyound-ui/deployment",
           },
           {
             label: "Add to an existing app",
-            description: "",
+            description:
+              "Integrate Flutter modules into your existing iOS or Android projects.",
             icon: "i-lucide-circle-plus",
             to: "/docs/beyound-ui/add-to-existing-app",
           },
