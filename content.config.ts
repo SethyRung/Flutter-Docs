@@ -35,6 +35,7 @@ export default defineContentConfig({
       schema: z.object({
         navigation: z.object({
           title: z.string().optional(),
+          shortTitle: z.string().optional(),
         }),
         links: z.array(Button),
       }),
