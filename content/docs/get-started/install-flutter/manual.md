@@ -7,7 +7,14 @@ navigation:
 
 Learn how to install and manually set up your Flutter development environment.
 
-::card{color="success" icon="i-lucide-lightbulb" title="Tip"}
+::u-alert
+---
+color: success
+icon: i-lucide-lightbulb
+title: Tip
+variant: subtle
+---
+#description
 If you've never set up or developed an app with Flutter before, follow [Get started with Flutter](https://docs.flutter.dev/get-started) instead.
 
 If you're just looking to quickly install Flutter, consider [installing Flutter with VS Code](https://docs.flutter.dev/install/with-vs-code) for a streamlined setup experience.
@@ -175,7 +182,13 @@ tar -xf ~/Downloads/flutter_linux_3.29.3-stable.tar.xz -C ~/develop/
 
 Now that you've downloaded the SDK, add the Flutter SDK's `bin` directory to your `PATH` environment variable. Adding Flutter to your `PATH` allows you to use the `flutter` and `dart` command-line tools in terminals and IDEs.
 
-::card{icon="i-lucide-info" title="Tip"}
+::u-alert
+---
+icon: i-lucide-info
+title: Tip
+variant: subtle
+---
+#description
 The following steps assume you've already [turned on Linux support](https://support.google.com/chromebook/answer/9145439) and that you're using Bash or the default shell on ChromeOS.
 
 If you're using a different shell besides the default or Bash, follow the [add to path instructions for Linux](https://docs.flutter.dev/install/add-to-path#linux) instead.
@@ -224,6 +237,13 @@ If either command isn't found, check out [Flutter installation troubleshooting](
 
 Now that you've successfully installed Flutter, set up development for at least one target platform to continue your journey with Flutter.
 
-::card{color="success" icon="i-lucide-zap" title="Recommended"}
+::u-alert
+---
+color: success
+icon: i-lucide-zap
+title: Recommended
+variant: subtle
+---
+#description
 If you don't yet have a preferred platform to target during development, the Flutter team recommends you first try out [developing on the web](https://docs.flutter.dev/platform-integration/web/setup)!
 ::
