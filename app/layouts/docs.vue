@@ -11,7 +11,7 @@ const { groupedNavigation } = useGroupNavigation(navigation!);
 <template>
   <UMain>
     <UContainer>
-      <UPage class="lg:gap-0">
+      <UPage>
         <template #left>
           <UPageAside>
             <UContentNavigation
