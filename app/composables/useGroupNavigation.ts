@@ -30,8 +30,13 @@ function groupChildrenByCategory(
       .filter((item) => item.children?.length)
       ?.map((item) => ({
         ...item,
+        title: (item.shortTitle ?? item.title) as string,
         children: item.children?.map((child) => ({
           ...child,
+          title:
+            child.path === item.path
+              ? "Overview"
+              : ((child.shortTitle ?? child.title) as string),
           icon: undefined,
         })),
       }));

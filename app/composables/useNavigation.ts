@@ -9,7 +9,6 @@ function _useHeaderLinks() {
         label: "Get Started",
         icon: "i-lucide-rocket",
         active: route.path.startsWith("/docs/get-started"),
-        to: "/docs/get-started",
         children: [
           {
             label: "Set up Flutter",
@@ -52,7 +51,6 @@ function _useHeaderLinks() {
       {
         label: "User interface",
         icon: "i-lucide-blocks",
-        to: "/docs/user-interface",
         children: [
           {
             label: "Introduction",
@@ -132,7 +130,6 @@ function _useHeaderLinks() {
       {
         label: "Beyond UI",
         icon: "i-lucide-file-stack",
-        to: "/docs/beyound-ui",
         children: [
           {
             label: "Data & backend",
