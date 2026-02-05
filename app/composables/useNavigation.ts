@@ -32,7 +32,7 @@ function _useHeaderLinks() {
             label: "Stay up to date",
             description: "Release notes for Flutter for prior releases.",
             icon: "i-lucide-clock-fading",
-            to: "/docs/get-started/stay-up-to-date",
+            to: "/docs/get-started/release/release-notes",
           },
           {
             label: "App solutions",

@@ -1,6 +1,36 @@
 import type { ContentNavigationItem } from "@nuxt/content";
 import { findPageChildren } from "@nuxt/content/utils";
 
+/**
+ * Recursively processes navigation item children, handling deep nesting
+ * by removing icons and normalizing titles across all levels.
+ */
+function processChildrenRecursive(
+  children: ContentNavigationItem[],
+  parentPath: string,
+): ContentNavigationItem[] {
+  return children.map((child) => {
+    const processedChild: ContentNavigationItem = {
+      ...child,
+      title:
+        child.path === parentPath
+          ? ((child.shortTitle ?? "Overview") as string)
+          : ((child.shortTitle ?? child.title) as string),
+      icon: undefined,
+    };
+
+    // Recursively process nested children if they exist
+    if (child.children?.length) {
+      processedChild.children = processChildrenRecursive(
+        child.children,
+        child.path,
+      );
+    }
+
+    return processedChild;
+  });
+}
+
 function groupChildrenByCategory(
   items: ContentNavigationItem[],
   slug: string,
@@ -31,15 +61,9 @@ function groupChildrenByCategory(
       ?.map((item) => ({
         ...item,
         title: (item.shortTitle ?? item.title) as string,
-        children: item.children?.map((child) => ({
-          ...child,
-          title:
-            child.path === item.path
-              ? "Overview"
-              : ((child.shortTitle ?? child.title) as string),
-          icon: undefined,
-        })),
+        children: processChildrenRecursive(item.children ?? [], item.path),
       }));
+
     const withoutChildren = uncategorized.filter(
       (item) => !item.children?.length,
     );
